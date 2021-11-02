@@ -21,6 +21,7 @@ const useEventListener = (
 
         emitter.on(name, callback)
         callbacks[name] = callback
+        return null
       })
 
       return () =>
