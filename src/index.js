@@ -28,6 +28,7 @@ const useEventListener = (
         names.map((name) => {
           emitter.removeListener(name, callbacks[name])
           removeListeners[name] && removeListeners[name]()
+          return null
         })
     }
   }, deps)
